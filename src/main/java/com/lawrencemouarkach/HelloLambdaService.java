@@ -6,4 +6,7 @@ public interface HelloLambdaService {
 
     @LambdaFunction(functionName = "Hello")
     String requestHello(String request);
+
+    @LambdaFunction(functionName = "HelloResponse")
+    HelloResponse requestHelloResponse(HelloRequest request);
 }
